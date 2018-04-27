@@ -1,5 +1,5 @@
 /*Code borrowed from adafruit.com
-modified by Keith Miller April 2018 *\
+modified by Keith Miller April 2018 */
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_ADXL345_U.h>

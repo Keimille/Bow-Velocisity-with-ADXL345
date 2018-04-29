@@ -8,6 +8,7 @@ int xi; //intial position (meters)
 int t; //time (in seconds)
 int Velocity;
 
+// eventually replace values from scanf with output from the acceleramator
 printf("Enter distance in meters");
 scanf("%d", &xf);
 xi = 0;

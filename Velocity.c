@@ -10,12 +10,17 @@ int xi; //intial position (meters)
 int t; //time (in seconds)
 int Velocity;
 
+//create a file from output
+
+
+
 // eventually replace values from scanf with output from the acceleramator
-printf("Enter distance in meters");
+/* printf("Enter distance in meters");
 scanf("%d", &xf);
 xi = 0;
 printf("Enter the amount of seconds it took for you to get to final position");
-scanf("%d", &t);
+scanf("%d", &t);*/
+  
 Velocity = xf - xi / t;
   /* Will likely need to create VelocityX, VelocityY and VelocityZ to record velocity of all axis
   the formula remains the same as line 16 */

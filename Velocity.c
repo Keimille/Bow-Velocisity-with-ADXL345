@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_ADXL345_U.h>
 
 int main(void) {
 

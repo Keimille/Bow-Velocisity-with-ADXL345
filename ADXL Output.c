@@ -3,6 +3,8 @@ modified by Keith Miller April 2018 */
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_ADXL345_U.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
@@ -153,3 +155,17 @@ void loop(void)
   delay(500);
 }
 
+{
+ FILE * fp;
+
+ fp = fopen("velocity.csv", "w+");
+  Serial.print("X: "); Serial.print(event.acceleration.x); Serial.print("  ");
+  Serial.print("Y: "); Serial.print(event.acceleration.y); Serial.print("  ");
+  Serial.print("Z: "); Serial.print(event.acceleration.z); Serial.print("  ");Serial.println("m/s^2 ");
+  delay(500);
+  
+  fclose(fp);
+   
+   return(0);
+
+}
